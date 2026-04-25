@@ -1,0 +1,27 @@
+[ContentDisplay]
+DirectorySizeMode[$i]=None
+UseShortRelativeDates[$i]=false
+
+[DetailsMode]
+ExpandableFolders[$i]=false
+PreviewSize=32
+
+[General]
+ShowFullPathInTitlebar[$i]=true
+ShowFullPath[$i]=true
+ShowStatusBar[$i]=FullWidth
+ViewMode[$i]=1
+SortingChoice=CaseInsensitiveSorting
+
+[MainWindow]
+MenuBar[$i]=Enabled
+
+[PreviewSettings]
+Plugins[$i]=windowsexethumbnail
+
+[InformationPanel]
+dateFormat=ShortFormat
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
