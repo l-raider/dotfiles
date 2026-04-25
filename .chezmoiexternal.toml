@@ -1,5 +1,19 @@
+# KDE Icon pack
 [".local/share/icons"]
 type = "archive"
 url = "https://github.com/mjkim0727/Eleven-icon-theme/releases/download/1.8/Eleven.tar.gz"
 checksum.sha256 = "b7814ac26d32c2dc25b70bb28f9fa71715f3eee919e1cd9306bb02307ecdce4a"
 exact = true
+
+# Fooyin plugins
+[".local/lib/fooyin/plugins/fyplugin_audiochecksum.so"]
+type = "file"
+url = {{ gitHubLatestReleaseAssetURL "l-raider/fooyin-plugins" "fyplugin_audiochecksum.so" | quote }}
+
+[".local/lib/fooyin/plugins/fyplugin_bpmanalyzer.so"]
+type = "file"
+url = {{ gitHubLatestReleaseAssetURL "l-raider/fooyin-plugins" "fyplugin_bpmanalyzer.so" | quote }}
+
+[".local/lib/fooyin/plugins/fyplugin_shortcutextender.so"]
+type = "file"
+url = {{ gitHubLatestReleaseAssetURL "l-raider/fooyin-plugins" "fyplugin_shortcutextender.so" | quote }}
