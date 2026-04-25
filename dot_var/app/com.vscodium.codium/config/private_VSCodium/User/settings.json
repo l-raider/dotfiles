@@ -1,0 +1,7 @@
+{
+    "files.hotExit": "onExitAndWindowClose",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "window.dialogStyle": "custom",
+    "workbench.colorTheme": "Default Dark Modern",
+}
