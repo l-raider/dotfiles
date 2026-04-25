@@ -1,0 +1,18 @@
+[General]
+AllowKDEAppsToRememberWindowPositions=true
+
+[Icons]
+Theme=Eleven-Dark
+
+[KDE]
+AnimationDurationFactor=0.2
+
+[KFileDialog Settings]
+Allow Expansion=false
+Show Inline Previews=false
+Show Preview=false
+View Style=DetailTree
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
