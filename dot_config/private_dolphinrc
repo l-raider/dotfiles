@@ -1,17 +1,17 @@
 [ContentDisplay]
-DirectorySizeMode[$i]=None
-UseShortRelativeDates[$i]=false
+DirectorySizeMode=None
+UseShortRelativeDates=false
 
 [DetailsMode]
-ExpandableFolders[$i]=false
+ExpandableFolders=false
 PreviewSize=32
 
 [General]
-ShowFullPath[$i]=true
-ShowFullPathInTitlebar[$i]=true
-ShowStatusBar[$i]=FullWidth
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
 SortingChoice=CaseInsensitiveSorting
-ViewMode[$i]=1
+ViewMode=1
 
 [InformationPanel]
 dateFormat=ShortFormat
@@ -20,8 +20,5 @@ dateFormat=ShortFormat
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
-[MainWindow]
-MenuBar[$i]=Enabled
-
 [PreviewSettings]
-Plugins[$i]=windowsexethumbnail
+Plugins=windowsexethumbnail
