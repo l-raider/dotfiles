@@ -12,6 +12,7 @@ BorderActivate=9
 [ElectricBorders]
 BottomRight=ShowDesktop
 
+{{- if eq .chezmoi.hostname "nixos" }}
 [NightColor]
 Active=true
 DayTemperature=5900
@@ -20,3 +21,4 @@ TransitionTime=60
 
 [Xwayland]
 Scale=1.6
+{{- end }}
