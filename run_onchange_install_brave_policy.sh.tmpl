@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# brave_browser_policy.json hash: {{ include "brave_browser_policy.json" | sha256sum }}
+
+source_dir="{{ .chezmoi.sourceDir }}"
+src={{ joinPath .chezmoi.sourceDir "brave_browser_policy.json" | quote }}
+dst="${DEST:-/etc/brave/policies/managed/brave_browser_policy.json}"
+dst_dir="$(dirname "$dst")"
+
+if [ ! -f "$src" ]; then
+  echo "Source file not found: $src" >&2
+  exit 1
+fi
+
+echo "Installing Brave policy from $src to $dst"
+sudo mkdir -p "$dst_dir"
+sudo cp --force "$src" "$dst"
+
+exit 0
