@@ -42,7 +42,7 @@ aac_save_ape=true
 ac3_save_ape=true
 acoustid_apikey={{- if eq .chezmoi.hostname "nixos" }}
     {{- if findExecutable "keepassxc" (list "/run/current-system/sw/bin" "/usr/bin" ) }}
-        {{ (keepassxc "picard_acoustid_apikey").Password }}
+        {{- (keepassxc "picard_acoustid_apikey").Password }}
     {{- end }}
 {{- end }}
 acoustid_fpcalc=
@@ -122,7 +122,7 @@ query_limit=50
 quit_confirmation=true
 rating_user_email={{- if eq .chezmoi.hostname "nixos" }}
     {{- if findExecutable "keepassxc" (list "/run/current-system/sw/bin" "/usr/bin" ) }}
-        {{ (keepassxc "musicbrainz_email").UserName }}
+        {{- (keepassxc "musicbrainz_email").UserName }}
     {{- end }}
 {{- end }}
 recursively_add_files=true
