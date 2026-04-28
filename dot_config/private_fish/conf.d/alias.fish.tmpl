@@ -1,18 +1,17 @@
 if status is-interactive
-    alias cat 'bat --paging=never --decorations=never'
+{{ if lookPath "bat" }}    alias cat 'bat --paging=never --decorations=never'{{ end }}
+{{ if lookPath "dysk" }}    alias df dysk{{ end }}
+{{ if lookPath "dua" }}    alias du dua{{ end }}
+{{ if lookPath "fd" }}    alias find 'fd --hidden'{{ end }}
+{{ if lookPath "rg" }}    alias grep 'rg --smart-case'{{ end }}
+{{ if lookPath "eza" }}    alias la 'eza -la --icons --group-directories-first'{{ end }}
+{{ if lookPath "bat" }}    alias less 'bat --paging=always'{{ end }}
+{{ if lookPath "eza" }}    alias ll 'eza -l --icons --group-directories-first'{{ end }}
+{{ if lookPath "qdbus" }}    alias logoff 'qdbus org.kde.Shutdown /Shutdown org.kde.Shutdown.logout'{{ end }}
+{{ if lookPath "eza" }}    alias ls 'eza --icons --group-directories-first'{{ end }}
+{{ if lookPath "bat" }}    alias more 'bat --paging=always'{{ end }}
+{{ if lookPath "dua" }}    alias ncdu 'dua interactive'{{ end }}
+{{ if lookPath "eza" }}    alias tree 'eza --tree --icons --all'{{ end }}
     alias cls clear
-    alias df dysk
-    alias du dua
-    alias find 'fd --hidden'
-    alias grep 'rg --smart-case'
     alias l 'ls -alh'
-    alias la 'eza -la --icons --group-directories-first'
-    alias less 'bat --paging=always'
-    alias ll 'eza -l --icons --group-directories-first'
-    alias logoff 'qdbus org.kde.Shutdown /Shutdown org.kde.Shutdown.logout'
-    alias ls 'eza --icons --group-directories-first'
-    alias more 'bat --paging=always'
-    alias ncdu 'dua interactive'
-    alias soft-reboot 'sudo systemctl soft-reboot'
-    alias tree 'eza --tree --icons --all'
 end
