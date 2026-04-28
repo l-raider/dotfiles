@@ -5,6 +5,13 @@ url = "https://github.com/mjkim0727/Eleven-icon-theme/releases/download/1.8/Elev
 checksum.sha256 = "b7814ac26d32c2dc25b70bb28f9fa71715f3eee919e1cd9306bb02307ecdce4a"
 exact = true
 
+# Nerd Fonts
+[".local/share/fonts/Hack"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.tar.xz"
+checksum.sha256 = "1d00a1435638084174516975840854368a45ac30bb0bad2c0c49db713b5925f0"
+exact = true
+
 # Fooyin plugins
 [".local/lib/fooyin/plugins/fyplugin_audiochecksum.so"]
 type = "file"
