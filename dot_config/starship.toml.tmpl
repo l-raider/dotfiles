@@ -1,0 +1,78 @@
+format = """
+$cmd_duration\
+$status\
+$line_break\
+[](#3B4252)\
+$os\
+$username\
+[](bg:#434C5E fg:#3B4252)\
+$directory\
+$git_branch\
+$git_status\
+$nix_shell\
+[](fg:#434C5E bg:#4C566A)\
+[](fg:#4C566A bg:#7db7e1)\
+[](fg:#7db7e1 bg:#4d72bb)\
+[ ](fg:#4d72bb)\
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+show_always = true
+style_user = "bg:#3B4252"
+style_root = "bg:#3B4252 fg:#680000"
+format = '[$user ]($style)'
+
+[directory]
+style = "bg:#434C5E"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "bg:#434C5E"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#434C5E"
+format = '[$all_status$ahead_behind ]($style)'
+
+[cmd_duration]
+min_time = 5000
+style = "fg:#7db7e1"
+format = "  [$duration]($style)"
+show_milliseconds = true
+disabled = false
+show_notifications = false
+min_time_to_notify = 45000
+
+[os]
+disabled = false
+style = "bg:#3B4252"
+
+[nix_shell]
+format = '[$symbol$state( \($name\))]($style)'
+symbol = " "
+style = "bg:#434C5E"
+impure_msg = "impure"
+pure_msg = "pure"
+unknown_msg = "unknown"
+disabled = false
+heuristic = false
+
+[status]
+style = ''
+map_symbol = true
+disabled = false
+
+#[sudo]
+#disabled = false
+#style = "bg:#3B4252"
+#format = '[$symbol]($style)'
+#symbol = '🧙'
+#symbol = '󰷖 '
