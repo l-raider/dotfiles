@@ -13,7 +13,7 @@ BorderActivate=9
 BottomRight=ShowDesktop
 
 [Plugins]
-{{- if eq .chezmoi.hostname "gpc" }}gamecontrollerEnabled=true{{- end }}
+{{if eq .chezmoi.hostname "gpc" }}gamecontrollerEnabled=true{{end }}
 wobblywindowsEnabled=false
 
 {{- if eq .chezmoi.hostname "nixos" }}
