@@ -12,6 +12,10 @@ BorderActivate=9
 [ElectricBorders]
 BottomRight=ShowDesktop
 
+[Plugins]
+{{- if eq .chezmoi.hostname "GPC" }}gamecontrollerEnabled=true{{- end }}
+wobblywindowsEnabled=false
+
 {{- if eq .chezmoi.hostname "nixos" }}
 [NightColor]
 Active=true
