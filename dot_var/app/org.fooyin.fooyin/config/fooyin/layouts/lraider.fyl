@@ -8,10 +8,18 @@
                 "Widgets": [
                     {
                         "SplitterHorizontal": {
-                            "State": "AAAA/wAAAAEAAAAEAAAAggAAAD4AAABnAAAGoQD/////AQAAAAEA",
+                            "State": "AAAA/wAAAAEAAAAFAAAAggAAABwAAAA+AAAAZwAABqEA/////wEAAAABAA==",
                             "Widgets": [
                                 {
                                     "PlayerControls": {
+                                    }
+                                },
+                                {
+                                    "CommandButton": {
+                                        "CommandId": "Playback.RandomTrack",
+                                        "IconPath": "",
+                                        "Text": "Random",
+                                        "ToolButtonStyle": 0
                                     }
                                 },
                                 {
@@ -25,8 +33,8 @@
                                 },
                                 {
                                     "SeekBar": {
-                                        "ElapsedTotal": false,
-                                        "ShowLabels": true
+                                        "ShowLabels": true,
+                                        "ShowRemainingTime": false
                                     }
                                 }
                             ]
